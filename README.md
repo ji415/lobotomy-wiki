@@ -1,16 +1,12 @@
 # 脑叶公司 Wiki（无广告镜像）
 
+**网站：https://ji415.github.io/lobotomy-wiki/**
+
 面向游玩查阅的中文静态 Wiki。版式和条目尽量贴近 [Fandom 脑叶公司 Wiki](https://lobotomycorp.fandom.com/zh/)，去掉广告、账号墙和追踪脚本。
 
 当前收录 **345** 篇正文和 **181** 条重定向，覆盖异想体档案、部门、职员、考验、抑制核心、E.G.O、剧情和机制。图片仍从原站图床加载。
 
-## 在线地址
-
-GitHub Pages 开启后访问：
-
-https://ji415.github.io/lobotomy-wiki/
-
-仓库：https://github.com/ji415/lobotomy-wiki
+仓库右侧 About 的 Website 已指向上述地址，点它会直接打开站点。
 
 ## 本地预览
 
