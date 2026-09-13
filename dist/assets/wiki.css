@@ -1,0 +1,2094 @@
+/* Theme variables used by imported wiki CSS */
+:root {
+  --theme-page-background-color: #1b1914;
+  --theme-page-background-color--rgb: 27, 25, 20;
+  --theme-page-background-color--secondary: #12110e;
+  --theme-page-text-color: #e6e1d1;
+  --theme-link-color: #e8c35a;
+  --theme-link-color--rgb: 232, 195, 90;
+  --theme-accent-color: #c9a227;
+  --theme-accent-color--hover: #dbce7a;
+  --theme-page-accent-mix-color: #5a5340;
+  --custom-accent-border-color: #afcfe2;
+  --custom-accent-highlight-color: var(--theme-accent-color--hover);
+  --custom-notice-blue-background-color: var(--theme-accent-color);
+  --custom-notice-blue-border-color: var(--custom-accent-border-color);
+  --custom-notice-red-background-color: hsl(0, 80%, 10%);
+  --custom-notice-red-border-color: hsl(0, 60%, 50%);
+  --custom-notice-purple-background-color: hsl(228, 80%, 10%);
+  --custom-notice-purple-border-color: hsl(243, 60%, 50%);
+  --custom-notice-green-background-color: hsl(84, 80%, 10%);
+  --custom-notice-green-border-color: hsl(84, 60%, 50%);
+  --custom-notice-yellow-background-color: hsl(59, 80%, 10%);
+  --custom-notice-yellow-border-color: hsl(59, 60%, 50%);
+  --custom-notice-orange-background-color: hsl(28, 80%, 10%);
+  --custom-notice-orange-border-color: hsl(28, 60%, 50%);
+  --custom-notice-pink-background-color: hsl(324, 80%, 10%);
+  --custom-color-red: #CB2742;
+  --custom-color-white: #EFECC0;
+  --custom-color-black: #A561AF;
+  --custom-color-blue: #3FCCBD;
+  --custom-color-zayin: #1DF900;
+  --custom-color-teth: #13A2FF;
+  --custom-color-he: #FFF900;
+  --custom-color-waw: #7B2BF3;
+  --custom-color-aleph: #FF0000;
+  --custom-color-dfo: #DF00D0;
+}
+.page-content, .article-content, .page__main {
+  background-color: transparent;
+  color: var(--theme-page-text-color);
+}
+
+
+/* ==== Common.css ==== */
+
+/* 这里放置的CSS将应用于所有皮肤 */
+:root {
+	--theme-page-text-color: #d6d6d6;
+	--custom-accent-border-color: #afcfe2;
+	--custom-accent-highlight-color: var(--theme-accent-color--hover);
+	--custom-notice-blue-background-color: var(--theme-accent-color);
+	--custom-notice-blue-border-color: var(--custom-accent-border-color);
+	--custom-notice-red-background-color: hsl(0, 80%, 10%);
+	--custom-notice-red-border-color: hsl(0, 60%, 50%);
+	--custom-notice-purple-background-color: hsl(228, 80%, 10%);
+	--custom-notice-purple-border-color: hsl(243, 60%, 50%);
+	--custom-notice-green-background-color: hsl(84, 80%, 10%);
+	--custom-notice-green-border-color: hsl(84, 60%, 50%);
+	--custom-notice-yellow-background-color: hsl(59, 80%, 10%);
+	--custom-notice-yellow-border-color: hsl(59, 60%, 50%);
+	--custom-notice-orange-background-color: hsl(28, 80%, 10%);
+	--custom-notice-orange-border-color: hsl(28, 60%, 50%);
+	--custom-notice-pink-background-color: hsl(324, 80%, 10%);
+	--custom-color-red: #CB2742;
+	--custom-color-white: #EFECC0;
+	--custom-color-black: #A561AF;
+	--custom-color-blue: #3FCCBD;
+	--custom-color-zayin: #1DF900;
+	--custom-color-teth: #13A2FF;
+	--custom-color-he: #FFF900;
+	--custom-color-waw: #7B2BF3;
+	--custom-color-aleph: #FF0000;
+	--custom-color-dfo: #DF00D0;
+}
+
+/* All Infoboxes */
+.infobox {
+    float: right;
+    position: relative;
+    border: 2px solid rgba(255, 255, 160, .35);
+    border-radius: 2px;
+    padding: 4px;
+    padding-bottom: 16px;
+    margin-left: 40px;
+    background-color: var(--theme-page-background-color);
+    color: #afae71;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.infobox>.bd_lt {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-color: var(--theme-page-background-color);
+    width: 22px;
+    height: 22px;
+    z-index: 3;
+}
+
+.infobox>.bd_lt>.bd {
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    height: 29px;
+    border-left: 2px solid #595938;
+    transform: rotate(45deg);
+}
+
+/*Template:Outerframe*/
+.outerframe {
+	margin: 10px;
+}
+
+.outerframe .bordertop {
+	margin-left: 21px;
+}
+
+.outerframe .trueframe {
+	padding: 10px 20px 20px 20px;
+}
+
+.outerframe .warning {
+	height: 20px;
+	background-repeat: no-repeat no-repeat;
+}
+
+.outerframe-yellow .bordertop{
+	border-top: 1px solid #dbce7a;
+}
+
+.outerframe-yellow .trueframe{
+	border: 1px solid #dbce7a;
+	border-top: 0;
+}
+
+.outerframe-yellow .warning {
+	border-right: 1px solid #dbce7a;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='570' height='20' viewBox='0 0 570 20' shape-rendering='geometricPrecision'%3E%3Cg id='frame-RGaG-jr'%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 28 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 0 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 84 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 56 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 140 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 112 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 196 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 168 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 254 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 226 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 310 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 282 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 366 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 338 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 422 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 394 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 480 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 452 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 536 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23DBCE7A' style='fill-rule:evenodd' transform='matrix(1 0 0 1 508 0)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.outerframe-purple .bordertop{
+	border-top: 1px solid #5D5362;
+}
+
+.outerframe-purple .trueframe{
+	border: 1px solid #5D5362;
+	border-top: 0;
+}
+
+.outerframe-purple .warning {
+	border-right: 1px solid #5D5362;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='570' height='20' viewBox='0 0 570 20' shape-rendering='geometricPrecision'%3E%3Cg id='frame-RGaG-jr'%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 28 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 0 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 84 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 56 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 140 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 112 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 196 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 168 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 254 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 226 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 310 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 282 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 366 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 338 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 422 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 394 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 480 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 452 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 536 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%235D5362' style='fill-rule:evenodd' transform='matrix(1 0 0 1 508 0)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.outerframe-red .bordertop{
+	border-top: 1px solid #951013;
+}
+
+.outerframe-red .trueframe{
+	border: 1px solid #951013;
+	border-top: 0;
+}
+
+.outerframe-red .warning {
+	border-right: 1px solid #951013;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='570' height='20' viewBox='0 0 570 20' shape-rendering='geometricPrecision'%3E%3Cg id='frame-RGaG-jr'%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 28 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 0 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 84 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 56 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 140 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 112 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 196 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 168 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 254 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 226 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 310 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 282 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 366 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 338 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 422 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 394 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 480 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 452 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 536 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23951013' style='fill-rule:evenodd' transform='matrix(1 0 0 1 508 0)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.outerframe-green .bordertop{
+	border-top: 1px solid #497232;
+}
+
+.outerframe-green .trueframe{
+	border: 1px solid #497232;
+	border-top: 0;
+}
+
+.outerframe-green .warning {
+	border-right: 1px solid #497232;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='570' height='20' viewBox='0 0 570 20' shape-rendering='geometricPrecision'%3E%3Cg id='frame-RGaG-jr'%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 28 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 0 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 84 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 56 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 140 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 112 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 196 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 168 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 254 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 226 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 310 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 282 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 366 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 338 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 422 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 394 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 480 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 452 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 536 0)'/%3E%3Cpath d='M20 0L34 0L14 20L0 20L20 0Z' shape-rendering='geometricPrecision' fill='%23497232' style='fill-rule:evenodd' transform='matrix(1 0 0 1 508 0)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+/* 色彩 */
+.color_red {
+	color: var(--custom-color-red);
+}
+
+.color_white {
+	color: var(--custom-color-white);
+}
+
+.color_black {
+	color: var(--custom-color-black);
+}
+
+.color_blue,
+.color_pale {
+	color: var(--custom-color-blue);
+}
+
+.color_zayin {
+	color: var(--custom-color-zayin);
+}
+
+.color_teth {
+	color: var(--custom-color-teth);
+}
+
+.color_he {
+	color: var(--custom-color-he);
+}
+
+.color_waw {
+	color: var(--custom-color-waw);
+}
+
+.color_aleph {
+	color: var(--custom-color-aleph);
+}
+
+.color_dfo {
+	color: var(--custom-color-dfo);
+}
+
+/*		页面样式修正		*/
+.page-content p+p {
+	margin: 1.5em 0;
+}
+
+.page-content p {
+    line-height: inherit;
+    margin: 0.5em 0 1.5em 0;
+}
+
+.page-content h3 {
+	font-weight: 700;
+}
+
+blockquote {
+	font-size: 20px;
+}
+
+/* 表格 */
+.wikitable caption {
+	background-color: var(--theme-page-background-color--secondary);
+    border: 1px solid var(--theme-border-color);
+}
+
+
+
+.article-table th,
+.article-table td,
+.fandom-table th,
+.fandom-table td {
+    padding: 0.2em 0.4em;
+}
+
+.article-table th,
+.fandom-table th {
+	padding-top: 9px;
+	padding-bottom: 9px;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.with-border th,
+.with-border td {
+	border: 1px solid var(--theme-border-color);
+}
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*    首页    */
+
+/* 版面 */
+.container {
+    width: 1400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.line-1 {
+    height: 800px;
+}
+
+.container.line-1 .box1 {
+    float: left;
+    width: 950px;
+    height: 100%;
+}
+
+.container.line-1 .box2 {
+    float: left;
+    width: 440px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+/* 色彩预制 */
+.bd-yellow {
+    border: 1px solid rgba(255, 255, 160, 1);
+}
+
+.bd-red {
+    border: 1px solid rgba(250, 60, 60, 1);
+}
+
+/*    Infocard    */
+.infocard {
+    margin: 10px 0;
+    border-radius: 6px;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    background-color: #AA77004c;
+}
+
+
+.infocard .retrans-icon {
+	background-image: url("remote/3355a247a697bd7e.bin");
+}
+
+.infocard .legacy-icon {
+	background-image: url("remote/87610575d6a22b81.bin");
+}
+
+.infocard .spoiler-icon {
+	width: 7em;
+    background-image: url("remote/1ade9a58cc8b1f69.bin");
+}
+
+
+/*		表格		*/
+table.code {
+    margin: .5em .5em .5em 0;
+    width: auto;
+    border: 1px #ccc solid;
+    border-radius: 6px;
+    line-height: 1.6;
+    padding: 4px;
+    border-spacing: 2px;
+}
+
+table.code th {
+    border-radius: 6px;
+    background-color: rgba(255, 255, 161, .5);
+}
+
+table.code td {
+    border-bottom: 1px solid #ccc;
+}
+
+/*		Template:Code		*/
+code.code {
+    border: 1px solid var(--theme-border-color);
+    border-radius: 2px;
+    padding: 0 1px 0.5px 1px;
+    font-weight: 700;
+    margin: 0 3px;
+}
+
+/*    retrans    */
+/*消除 retrans 按钮位置错误显示*/
+#content #retrans-button {
+	display: none;
+}
+
+#retrans-button {
+	font-weight: 700;
+	user-select: none;
+}
+
+.post-retrans {
+	display: none;
+	padding: 2px 0;
+	background-color: #167a6c;
+}
+/*剧情*/
+.story-box {
+    max-height: 700px;
+    overflow: auto;
+    padding-left: 0.5em;
+    width: 100%;
+}
+.story {
+    position:relative;
+    min-height:105px;
+}
+
+.story-content {
+    margin-top:-110px;
+    margin-left:95px;
+    width:70%;
+    min-height:105px;
+    display: flex;
+    align-items: center;
+    font-size:1em
+}
+.selection-desktop-hidden {
+    display: none;
+}
+.story-navbox {
+    display: inline-block;
+    width: 75px;
+    height: 86px;
+    position: relative;
+}
+.story-navbox:hover {
+    filter: invert(0.5) sepia(1) hue-rotate(150deg) contrast(200%);
+}
+.story-navbox-num {
+    font-size: 22px;
+    width: 75px;
+    text-align: center;
+    margin-top: 31px;
+    position: absolute;
+    font-family: Norwester;
+}
+.story-navbox-num a{
+    color:#ffffa1
+}
+.story-navbox-end {
+    margin-top: -4px;
+    font-size:20px;
+    font-family:ui-serif;
+    font-weight: lighter;
+}
+/*异想体搜索*/
+div#Abnormality-search-input {
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+/*核心抑制警告条*/
+@font-face {
+    font-family: 'Norwester';
+    src: url("remote/ecc32e539e6552c1.bin") format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+.SephirahMeltdown {
+    Overflow: hidden
+}
+
+.SephirahMeltdown-WARINING-left {
+    font-family: Norwester;
+    white-space:nowrap;
+    width:825px;
+    height:36px;
+    color: #ff4431;
+    font-size: 22px;
+    animation: WARINING-left 2s infinite linear
+}
+
+.SephirahMeltdown-WARINING-right {
+    font-family: Norwester;
+    white-space:nowrap;
+    width:825px;
+    color: #ff4431;
+    height:36px;
+    font-size: 22px;
+    animation: WARINING-right 2s infinite linear
+}
+.SephirahMeltdown-text {
+    padding: 10px 0;
+    white-space:nowrap;
+    background-color:#ff4431;
+    text-align: center;
+    height:100px;
+    color: #ffffff;
+    font-size: 23px;
+}
+@keyframes WARINING-left {
+    0% {
+        transform: translate(0%)
+    }
+
+    100% {
+        transform: translate(-10.9%)
+    }
+}
+
+@keyframes WARINING-right {
+    0% {
+        transform: translate(-10.9%)
+    }
+
+    100% {
+        transform: translate(0%)
+    }
+}
+/* 剧情CG滤镜 */
+.story-filter-grayscale {
+    filter: grayscale(100%);
+}
+/* 剧情选项 */
+.selection .wds-tabs__tab {
+    min-width:200px;
+    border-color:#e93535;
+    text-align: center;
+    border-style:solid;
+    border-width:2.5px;
+    margin-right:3px;
+}
+.selection .wds-tabs__tab.wds-is-current {
+    border-color: var(--wds-tab-color--active);
+}
+
+.selection .wds-tabs__wrapper{
+    --wds-tab-border-color: rgba(var(--theme-page-dynamic-color-1--rgb),0);
+    margin-bottom:5px;
+}
+
+.pi-theme-selection.portable-infobox {
+    width: auto;
+    float: none;
+    margin:0
+}
+
+.pi-theme-selection.pi-border-color {
+    border-color: transparent;
+}
+
+.pi-theme-selection .pi-navigation {
+    background: transparent;
+    font-weight: initial
+}
+
+.pi-theme-selection.portable-infobox .pi-header {
+    display: none
+}
+
+.pi-theme-selection .pi-data {
+    padding-left: 0px
+}
+
+.pi-theme-selection .pi-font {
+    font-size:1em;
+}
+.pi-theme-selection .pi-data-value {
+    width:100%
+}
+.pi-theme-selection .pi-item-spacing {
+    padding-bottom: 0px;
+}
+.pi-theme-selection.portable-infobox {
+    border-width: 0px;
+}
+/* 主页 */
+.mainpage-desktop {
+	display: block;
+}
+.mainpage-mobile {
+	display: none;
+}
+@media (max-width: 768px) {
+	.mainpage-desktop {
+		display: none;
+	}
+	.mainpage-mobile {
+		display: block;
+	}
+}
+/* 电脑 */
+.mainpage-desktop {
+	position: relative;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 2167 / 3447;
+	background-image: url("remote/db9ab8785d1c2402.bin");
+	background-size: contain;
+}
+.mainpage-desktop-malkuth {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 170 / 1829);
+	left: calc(100% * 425 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 180 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-yesod {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 445 / 1829);
+	left: calc(100% * 425 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 180 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-netzach {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 445 / 1829);
+	left: calc(100% * 35 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 180 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-hod {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 445 / 1829);
+	left: calc(100% * 815 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 180 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-tiphereth {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 1010 / 1829);
+	left: calc(100% * 425 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 360 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-chesed {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 1010 / 1829);
+	left: calc(100% * 35 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 360 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-geburah {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 1010 / 1829);
+	left: calc(100% * 815 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 360 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-kether {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 1650 / 1829);
+	left: calc(100% * 35 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 180 / 1829);
+	background-color: red;
+}
+.mainpage-desktop-binah {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 1650 / 1829);
+	left: calc(100% * 815 / 1150);
+	width: calc(100% * 300 / 1150);
+	height: calc(100% * 180 / 1829);
+	background-color: red;
+}
+/* 移动设备 */
+.mainpage-mobile {
+	position: static;	/* 不使用空规则集，嗯*/
+}
+.mainpage-mobile-malkuth {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	aspect-ratio: 590 / 462;
+	background-image: url("remote/a6194abcf7d3c973.bin");
+	background-size: contain;
+}
+.mainpage-mobile-yesod {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	aspect-ratio: 590 / 462;
+	background-image: url("remote/f12590f72e4b6dd9.bin");
+	background-size: contain;
+}
+.mainpage-mobile-netzach {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	aspect-ratio: 590 / 462;
+	background-image: url("remote/da7357ca577ea4fe.bin");
+	background-size: contain;
+}
+.mainpage-mobile-hod {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	aspect-ratio: 590 / 462;
+	background-image: url("remote/ef0fc0f16b5a5743.bin");
+	background-size: contain;
+}
+.mainpage-mobile-chesed {
+	position: relative;
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	aspect-ratio: 586 / 806;
+	background-image: url("remote/c75cd34d3182b43d.bin");
+	background-size: contain;
+}
+.mainpage-mobile-tiphereth {
+	position: relative;
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	aspect-ratio: 586 / 806;
+	background-image: url("remote/bbf130cbf24439cb.bin");
+	background-size: contain;
+}
+.mainpage-mobile-geburah {
+	position: relative;
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	aspect-ratio: 586 / 806;
+	background-image: url("remote/630b14b4bb3b7901.bin");
+	background-size: contain;
+}
+.mainpage-mobile-kether {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	aspect-ratio: 590 / 462;
+	background-image: url("remote/3d946cb8ba4be899.bin");
+	background-size: contain;
+}
+.mainpage-mobile-binah {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	aspect-ratio: 590 / 462;
+	background-image: url("remote/2e17d72046a47243.bin");
+	background-size: contain;
+}
+.mainpage-mobile-contentsmall {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 120 / 462);
+	left: calc(100% * 10 / 590);
+	width: calc(100% * 570 / 590);
+	height: calc(100% * 335 / 462);
+	background-color: red;
+}
+.mainpage-mobile-contentbig {
+	position: absolute;
+	display: inline-block;
+	top: calc(100% * 120 / 806);
+	left: calc(100% * 10 / 586);
+	width: calc(100% * 570 / 586);
+	height: calc(100% * 335 / 806);
+	background-color: red;
+}
+.loboframe {
+    border: 20px solid transparent;
+    border-image: url("remote/2aaeea15e8f1d6ba.bin") 70 stretch;
+    border-image-width: 45px;
+    margin: 10px
+}
+.loboframe2 {
+    border: 20px solid transparent;
+    border-image: url("remote/312a771abfafd007.bin") 70 stretch;
+    border-image-width: 45px;
+    margin: 10px
+}
+.loboframe3 {
+    border: 20px solid transparent;
+    border-image: url("remote/cbd84524d02817c2.bin") 70 stretch;
+    border-image-width: 45px;
+    margin: 10px
+}
+.loboframe4 {
+    border: 20px solid transparent;
+    border-image: url("remote/5ef5bd6b2fda1cf6.bin") 70 stretch;
+    border-image-width: 45px;
+    margin: 10px
+}
+.loboframe-header {
+    color: #A0A0A0;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 1px 3px #A0A0A0;
+}
+.notices {
+    border:30px solid transparent;
+    border-image: url("remote/6a921f8e7be87df1.bin") 50 stretch;
+    border-image-width: 67px;
+    margin: 0px
+}
+/* 首页标题 */
+.Mainpage-title-border {
+    display: none;
+}
+
+
+.linkframe {
+    border: 20px solid transparent;
+    border-image: url("remote/23f0eca4c4e630ee.bin") 50 stretch;
+    border-image-width: 45px;
+    margin: 10px
+}
+
+.linkframe-header {
+    color: #ff902e;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 1px 1px #ff902e
+}
+
+.Mobile-text{
+	display:none;
+}
+
+/*隐藏标题旁边的编辑按钮*/
+.mw-editsection {
+	display: none;
+}
+/*关于，留言等界面的icon*/
+@font-face {
+    font-family: 'FANDOM-Icons';
+    src: url("remote/2eb8c6f79ba1fe20.bin") format('woff2'),url("remote/00b77ce8993df493.bin") format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+#userProfileApp .user-profile-navigation__link:before {
+    font-family: Fandom-Icons;
+    color: var(--theme-link-color)
+}
+
+#userProfileApp .user-profile-navigation__link:nth-child(1):before {
+    content: 'avatar '
+}
+
+#userProfileApp .user-profile-navigation__link:nth-child(2):before {
+    content: 'bubble '
+}
+
+#userProfileApp .user-profile-navigation__link:nth-child(3):before {
+    content: 'book '
+}
+
+#userProfileApp .user-profile-navigation__link:nth-child(4):before {
+    content: 'pencil '
+}
+
+#userProfileApp .user-profile-navigation__link:nth-child(5):before {
+    content: 'activity '
+}
+
+#userProfileApp .user-profile-navigation__link:nth-child(6):before {
+    content: 'pages '
+}
+/*用户定制字体颜色字体颜色*/
+/*管理员*/
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:Cloverligh"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:%E7%BE%BD%E4%B8%80%E4%B8%80"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:DFoodo"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:SOgz12Z3Ce"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:PWMJ"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:Cloverligh"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:%E7%BE%BD%E4%B8%80%E4%B8%80"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:DFoodo"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:SOgz12Z3Ce"] {
+    color: #EE7700 !important;
+}
+/*用户贡献字体颜色*/
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/Cloverligh"] {
+    color: #EE7700 !important
+}
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/%E7%BE%BD%E4%B8%80%E4%B8%80"] {
+    color: #EE7700 !important
+}
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/DFoodo"] {
+    color: #EE7700 !important
+}
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/SOgz12Z3Ce"] {
+    color: #EE7700 !important
+}
+/*社区志愿者*/
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:%E9%93%81%E6%A1%B6"] {
+    color: #50C878 !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:%E9%93%81%E6%A1%B6"] {
+    color: #50C878 !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/%E9%93%81%E6%A1%B6"] {
+    color: #50C878 !important
+}
+/*bot*/
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:DFoodoBot"] {
+    color: #9F35FF !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:DFoodoBot"] {
+    color: #9F35FF !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/DFoodoBot"] {
+    color: #9F35FF !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:Yuyiyi-Bot"] {
+    color: #9F35FF !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:Yuyiyi-Bot"] {
+    color: #9F35FF !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/Yuyiyi-Bot"] {
+    color: #9F35FF !important
+}
+/*行政员*/
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:CreeperLin"] {
+    color: #66ff33 !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:CreeperLin"] {
+    color: #66ff33 !important
+}
+
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/CreeperLin"] {
+    color: #66ff33 !important
+}
+/*内容版主*/
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/User:RayCin"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/%E7%95%99%E8%A8%80%E5%A2%99:RayCin"],
+#userProfileApp .user-profile-navigation__link a[href$="/wiki/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/RayCin"]{
+    color: #00ffff !important
+}
+
+/*关于等下方那条横线*/
+#userProfileApp .user-profile-navigation {
+    border-bottom-color: var(--theme-link-color)
+}
+
+#userProfileApp .user-identity-header :is(h1) {
+    background-image: linear-gradient(to top,rgba(var(--theme-link-color--rgb),0) 40%,transparent 40%,transparent 100%);
+    line-height: normal;
+    color: var(--theme-link-color)
+}
+
+a[href$="/wiki/User:CreeperLin"] {
+    color: #66ff33 !important;
+}
+
+a[href$="/wiki/User:羽一一"] {
+    color: #EE7700 !important;
+}
+a[href$="/wiki/User:%E7%BE%BD%E4%B8%80%E4%B8%80"],
+a[href$="/wiki/User:Cloverligh"],
+a[href$="/wiki/User:DFoodo"],
+a[href$="/wiki/User:SOgz12Z3Ce"],
+a[href$="/wiki/User:PWMJ"]{
+    color: #EE7700 !important;
+}
+
+a[href$="/wiki/User:DFoodoBot"],
+a[href$="/wiki/User:Yuyiyi-Bot"]{
+    color: #9F35FF !important;
+}
+
+a[href$="/wiki/User:%E9%93%81%E6%A1%B6"] {
+    color: #50C878 !important;
+}
+
+a[href$="/wiki/User:RayCin"] {
+    color: #00ffff !important;
+}
+
+a[href$="/wiki/Category:ZAYIN"]{
+    color: #0F0 !important;
+}
+a[href$="/wiki/Category:TETH"]{
+    color: #1E90FF !important;
+}
+a[href$="/wiki/Category:HE"]{
+    color: #FF0 !important;
+}
+a[href$="/wiki/Category:WAW"]{
+    color: #8A2BE2 !important;
+}
+a[href$="/wiki/Category:ALEPH"]{
+    color: #F00 !important;
+}
+
+/*外框*/
+.lorframe {
+    border: 30px solid transparent;
+    border-image: url("remote/b5d4bddf92cdce24.bin") 150 stretch;
+    border-image-width: 45px;
+    margin: 5px;
+}
+.lorframe-header {
+    color: #EDC382;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 3px #EDC382;
+}
+.lorframe2 {
+    border: 30px solid transparent;
+    border-image: url("remote/6b59a4bce4779b8b.bin") 150 stretch;
+    border-image-width: 70px;
+    margin: 5px;
+}
+.lorframe2-header {
+    color: #EDC382;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 2px #EDC382;
+}
+/*如果你使用浅色主题，这会保证你在写代码的时候不会一打开源代码编辑器就直视光之种*/
+.ace-dawn .ace_print-margin {
+  width: 1px;
+  background-color:#232323
+}
+
+.ace-dawn {
+  background-color: #141414;
+  color:#F8F8F8
+}
+/*编辑差异的美化样式*/
+.diff td.diff-addedline, .diff td.diff-deletedline, .diff td.diff-context {
+	border-radius: 0;
+	border-width:0 0 0 3px;
+	transition: .3s;
+}
+.diffchange-inline {
+	background-color: transparent;
+}
+.diff td.diff-addedline:hover, .diff td.diff-deletedline:hover, .diff td.diff-context:hover {
+	filter: brightness(0.9);
+}
+.diff td.diff-addedline {
+	background-image: linear-gradient(to right,var(--theme-success-color) -100%,transparent 100%);
+}
+.diff td.diff-addedline .diffchange-inline {
+	font-weight: bold;
+}
+.diff td.diff-deletedline {
+	background-image: linear-gradient(to right,var(--theme-alert-color) -100%,transparent 100%);
+}
+.diff td.diff-context {
+	background-image: linear-gradient(to right,var(--theme-border-color) -100%,transparent 100%);
+}
+/*神秘小代码*/
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*工具异想体研究日志啥的*/
+@font-face {
+    font-family: 'Lionblack';
+    src: url(https://static.wikia.nocookie.net/library-of-ruina/images/9/9b/%E7%8B%AE%E5%B0%BE%E5%BF%AB%E5%89%AA%E9%BB%91%E4%BD%93.woff2/revision/latest?cb=20250418170240&format=original&path-prefix=zh) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.tool-page-border1 {
+    border: 10px solid transparent;
+    border-image: url("remote/04779ebfaf119479.bin") 103 150 stretch;
+    border-image-width: 500px;
+    margin: 5px;
+    min-height: 100px;
+    padding-left: 20px;
+    padding-right: 0px;
+    color: #efeead;
+    font-family: Lionblack
+}
+.tool-page-border2 {
+    border: 10px solid transparent;
+    border-image: url("remote/e35284923bfd20f2.bin") 107 stretch;
+    border-image-width: 500px;
+    margin: 5px;
+    min-height: 100px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #ffab6a;
+    font-family: Lionblack
+}
+.tool-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+audio {
+    height: 25px
+}
+/*极高优先级，甚至高于内联样式，用于修改音频宽度*/
+audio.mw-file-element:nth-of-type(1) { 
+  width:370px !important; 
+}
+/* 翻译修正 */
+#mw-customcollapsible-trans_new.mw-collapsed {
+    display:none;
+}
+#mw-customcollapsible-trans_old.mw-collapsed {
+    display:none;
+}
+/* 导航栏文字投影 */
+.theme-fandomdesktop-dark .fandom-community-header__community-name,
+.theme-fandomdesktop-dark .fandom-community-header__local-navigation .first-level-item {
+    filter: drop-shadow(0 0 0.5rem black);
+}
+
+
+/* ==== AbnormalityBox.css ==== */
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url("remote/666aea7f277a0827.bin") format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+.Abnormality {
+    display: inline-block;
+    margin-left: 11px;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    Overflow: hidden;
+    width: calc(19% - 10px);
+    min-width: 100px;
+}
+.Abnormality-ZAYIN,
+.Abnormality-TETH,
+.Abnormality-HE,
+.Abnormality-WAW,
+.Abnormality-ALEPH{
+    display: inline-block;
+    width: calc(100%);
+    max-width:140px;
+}
+.Abnormality-border {
+    position: relative;
+    display: inline-block;
+    background-image: url("remote/1cb0f0c0516dc429.bin");
+    width: 100%;
+    padding-bottom: 142.86%;
+    background-repeat: no-repeat;
+    background-size: auto 220%;
+}
+
+.Abnormality-ZAYIN .Abnormality-border {
+    background-position: 74.44% 100%
+}
+
+.Abnormality:hover .Abnormality-ZAYIN .Abnormality-border {
+    background-position: 74.44% 0%
+}
+
+.Abnormality-TETH .Abnormality-border {
+    background-position: -1% 100%
+}
+
+.Abnormality:hover .Abnormality-TETH .Abnormality-border {
+    background-position: -1% 0%
+}
+
+.Abnormality-HE .Abnormality-border {
+    background-position: 24.5% 100%
+}
+
+.Abnormality:hover .Abnormality-HE .Abnormality-border {
+    background-position: 24.5% 0%
+}
+
+.Abnormality-WAW .Abnormality-border {
+    background-position: 100.1% 100%
+}
+
+.Abnormality:hover .Abnormality-WAW .Abnormality-border {
+    background-position: 100.1% 0%
+}
+
+.Abnormality-ALEPH .Abnormality-border {
+    background-position: 49.7% 100%
+}
+
+.Abnormality:hover .Abnormality-ALEPH .Abnormality-border {
+    background-position: 49.7% 0%
+}
+
+.Abnormality img {
+    position: absolute;
+    margin-left: 23%;
+    width: 60%;
+    height: 60%;
+    margin-top: 36%;
+    object-fit: contain
+}
+
+.Abnormality:hover {
+    transition: 0.05s linear;
+    transform: scale(1.12)
+}
+
+.Abnormality-id {
+    position: absolute;
+    text-align: center;
+    font-family: BMDOHYEON;
+    color: black;
+    margin-top: 25%;
+    width: 105%;
+    transform: rotate(-3deg)
+}
+
+.Abnormality-id-cn {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin-top: 26%;
+    width: 105%;
+    transform: rotate(-3deg)
+}
+
+.Abnormality-name {
+    position: absolute;
+    margin-top: 111%;
+    background-color: #424242;
+    color: white;
+    text-align: center;
+    min-width: 105%;
+}
+
+.Abnormality:hover .Abnormality-ZAYIN .Abnormality-name {
+    background-color: #1ef802;
+    color: black
+}
+
+.Abnormality:hover .Abnormality-TETH .Abnormality-name {
+    background-color: #15a1fc;
+    color: black
+}
+
+.Abnormality:hover .Abnormality-HE .Abnormality-name {
+    background-color: #fefe2f;
+    color: black
+}
+
+.Abnormality:hover .Abnormality-WAW .Abnormality-name {
+    background-color: #7e2ef1;
+    color: black
+}
+
+.Abnormality:hover .Abnormality-ALEPH .Abnormality-name {
+    background-color: #e70a07;
+    color: black
+}
+.Abnormality:hover .Abnormality-ALEPH .Abnormality-name span {
+    color: black !important;
+}
+
+.Abnormality-DLC {
+    display: inline-block;
+    margin-left: 11px;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    Overflow: hidden;
+    width: calc(19% - 10px);
+    min-width: 100px;
+}
+.Abnormality-DLC-ZAYIN,
+.Abnormality-DLC-TETH,
+.Abnormality-DLC-HE,
+.Abnormality-DLC-WAW,
+.Abnormality-DLC-ALEPH{
+    display: inline-block;
+    width: calc(100%);
+    max-width:140px;
+}
+
+.Abnormality-DLC-border {
+    position: relative;
+    display: inline-block;
+    background-image: url("remote/44578cdc51b51177.bin");
+    width: 100%;
+    padding-bottom: 142.86%;
+    background-repeat: no-repeat;
+    background-size: auto 235%;
+}
+
+.Abnormality-DLC-ZAYIN .Abnormality-DLC-border {
+    background-position: 3.2% 1%
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-ZAYIN .Abnormality-DLC-border {
+    background-position: 3.2% 97.5%
+}
+
+.Abnormality-DLC-TETH .Abnormality-DLC-border {
+    background-position: 25.45% 1%
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-TETH .Abnormality-DLC-border {
+    background-position: 25.45% 97.5%
+}
+
+.Abnormality-DLC-HE .Abnormality-DLC-border {
+    background-position: 49.4% 1%
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-HE .Abnormality-DLC-border {
+    background-position: 49.4% 97.5%
+}
+
+.Abnormality-DLC-WAW .Abnormality-DLC-border {
+    background-position: 72.5% 1%
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-WAW .Abnormality-DLC-border {
+    background-position: 72.5% 97.5%
+}
+
+.Abnormality-DLC-ALEPH .Abnormality-DLC-border {
+    background-position: 94.9% 1%
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-ALEPH .Abnormality-DLC-border {
+    background-position: 94.9% 97.5%
+}
+
+.Abnormality-DLC img {
+    position: absolute;
+    margin-left: 20%;
+    width: 60%;
+    height: 60%;
+    margin-top: 36%;
+    object-fit: contain
+}
+
+.Abnormality-DLC:hover {
+    transition: 0.05s linear;
+    transform: scale(1.12)
+}
+
+.Abnormality-DLC-id {
+    position: absolute;
+    text-align: center;
+    font-family: BMDOHYEON;
+    color: black;
+    margin-top: 28.5%;
+    width: 100%;
+    transform: rotate(-3deg)
+}
+
+.Abnormality-DLC-name {
+    position: absolute;
+    margin-top: 111%;
+    background-color: #424242;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 105%;
+    font-size: 1
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-ZAYIN .Abnormality-DLC-name {
+    background-color: #1ef802;
+    color: black
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-TETH .Abnormality-DLC-name {
+    background-color: #15a1fc;
+    color: black
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-HE .Abnormality-DLC-name {
+    background-color: #fefe2f;
+    color: black
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-WAW .Abnormality-DLC-name {
+    background-color: #7e2ef1;
+    color: black
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-ALEPH .Abnormality-DLC-name {
+    background-color: #e70a07;
+    color: black
+}
+
+
+/* ==== FlexibleWiki.css ==== */
+/* 占位SVG，防止解析器突然发狂把:is()全都斩杀 */
+body::after {
+  content: '';
+  display: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"></svg>');
+}
+
+.page__main {
+    background-color: rgba(var(--theme-page-background-color--rgb),0.9)
+}
+
+/*代码块背景透明*/
+:is(.page-content, .article-content) pre {
+	font-family: Consolas, monospace;
+	line-height: normal;
+	border-color: var(--theme-page-accent-mix-color);
+	border-radius: 10px;
+}
+:is(.theme-fandomdesktop-dark, .theme-fandommobile-dark) :is(.page-content, .article-content) pre {
+	background-color: transparent;
+}
+:is(.page-content, .article-content) code {
+	font-family: Consolas, monospace;
+	margin: 0 0.2rem;
+}
+/*Template:Templabel*/
+.label[data-type="module"] .label-type {
+	background: url("remote/99757ac3149229df.bin") no-repeat center, rgba(var(--theme-link-color--rgb), 0.3);
+	background-size: 60%;
+	height: 3rem;
+	color: transparent;
+	user-select: none;
+}
+.label[data-type="css"] .label-type {
+	background: url("remote/c4b574b6e73467e7.bin") no-repeat center, rgba(var(--theme-link-color--rgb), 0.3);
+	background-size: 60%;
+	height: 3rem;
+	color: transparent;
+	user-select: none;
+}
+.label[data-type="single"] .label-type {
+	color: transparent;
+	background: url("remote/82061ae1f47f9fe7.bin") no-repeat center, rgba(var(--theme-link-color--rgb), 0.3);
+	background-size: 50%;
+	height: 3rem;
+	color: transparent;
+	user-select: none;
+}
+.label-parent {
+	display: flex;
+	flex-direction: column;
+	float: right;
+	margin: 5px;
+}
+.label {
+	display: flex;
+	background: rgba(var(--theme-link-color--rgb), 0.1);
+	width: fit-content;
+	border: 3px solid rgba(var(--theme-link-color--rgb), 0.5);
+}
+.label-type {
+	width: 4rem;
+	display: flex;
+	background: rgba(var(--theme-link-color--rgb), 0.3);
+	align-items: center;
+	justify-content: center;
+	font-size: large;
+	font-weight: bold;
+}
+.label-content {
+	width: 16rem;
+	word-break: break-all;
+	font-size: small;
+	line-height: 1.1rem;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+}
+.label + .label {
+	margin-top: 5px;
+}
+:is(.page-content, .article-content) .label.label.label .label-type img {
+	background: transparent;
+}
+:is(.page-content, .article-content) .label.label.label .label-type img:hover {
+	transform: none;
+}
+@keyframes label-transX {
+	 0% { transform: translateX( 7rem); }
+	100% { transform: translateX(-7rem); }
+}
+.label-type.anim code {
+	word-break: keep-all;
+	animation: label-transX infinite 2.5s linear;
+}
+.label-type.anim {
+	overflow: hidden;
+}
+/** 窄屏适配(尤其是移动端) **/
+@media (max-width: 600px) {
+.label-parent {
+	width: 100%;
+	align-items: center;
+}
+.label {
+	width: 90%;
+}
+.label-content {
+	width: calc(100% - 4rem);
+}
+}
+/** 分项 **/
+.label[data-type="color"] .label-type {
+	background: linear-gradient(945deg, red, orange, yellow, green, blue, purple);
+	text-shadow: 2px 2px black;
+	color: white;
+}
+.label[data-type="css"] .label-type > span {
+	position: absolute;
+	opacity: 0.8;
+}
+.label[data-type="data"] .label-type {
+	font-size: xx-small;
+}
+.label[data-type="hide-when-no-args"] .label-type {
+	font-size: xx-small;
+}
+.label[data-type="mobile"] .label-type {
+	flex-wrap: wrap;
+}
+.label[data-type="mobile"] .label-type > span {
+	position: absolute;
+	opacity: 0.8;
+}
+.label[data-type="noargs"] .label-type {
+	font-size: smaller;
+}
+.label[data-type="single"] .label-type {
+	font-size: x-small;
+}
+.label[data-type="unmaintained"] {
+	border-color: rgba(255,0,0,.5);
+	background-color: rgba(255,0,0,.1)
+}
+.label[data-type="unmaintained"] .label-type {
+	background-color:rgba(255,0,0,.3)
+}
+/*页面底部的协议*/
+.skin-fandomdesktop .license-description:before {
+	display: inline-block;
+	float: right;
+	visibility: visible;
+	margin-left: 5.6px;
+	width: 272px;
+	height: 31px;
+	content: url("remote/0c153d43e8289e41.png") " " url("remote/31d42dd16bf0a69f.svg") " " url("remote/2522cd04466279a0.svg")
+}
+/*各种最近更改，页面历史样式*/
+.mw-changeslist,
+.mw-contributions-list,
+.mw-logevent-loglines,
+.social-activity-feed {
+	position: relative;
+	font-size: 0.875rem;
+	transition: all .3s;
+	--bg-color: transparent;
+	--bg-color--hover: rgba(var(--theme-page-background-color--secondary--rgb), 0.5);
+	--line-color: rgba(var(--theme-link-color--rgb), 0.7);
+	--circle-border-color: var(--line-color);
+	--circle-border-color--hover: var(--circle-border-color);
+	--circle-bg-color: var(--theme-page-background-color--secondary);
+	--circle-bg-color--hover: var(--theme-page-text-color);
+	--li-padding: 6px;
+	--left-width: 20px;
+	--line-width: 2px;
+	--circle-radius: 5px;
+	--circle-radius--hover: calc(var(--circle-radius) + 2px);
+	--circle-border-width: 2px;
+	--circle-border-width--hover: var(--circle-border-width);
+}
+.mw-changeslist.mw-changeslist {
+	--left-width: 0px;
+}
+.mw-changeslist::before,
+body:not(.skin-fandommobile) .mw-contributions-list::before,
+.mw-logevent-loglines::before,
+.social-activity-feed::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background: var(--line-color);
+}
+:is(#text6652, .mw-changeslist ul, .mw-changeslist,
+ul.mw-contributions-list,
+.mw-logevent-loglines,
+.social-activity-feed ul, .social-activity-feed) {
+	margin: 0;
+	padding-left: 12px;
+	list-style: none;
+	transition: all .3s;
+}
+:is(#text6652, .mw-changeslist ul.special,
+.social-activity-feed ul.social-activity-list) {
+	padding-left: 0;
+}
+:is(#text6652#text2233, .mw-changeslist-line,
+.mw-contributions-list li,
+.mw-logevent-loglines li,
+.social-activity-list li) {
+	padding: var(--li-padding) !important;
+	background-color: var(--bg-color);
+	margin: 0 0 0 var(--left-width);
+	border-radius: 5px;
+	position: relative;
+	transition: all .3s;
+}
+:is(#text6652#text2233, .mw-changeslist-line:hover,
+.mw-contributions-list li:hover,
+.mw-logevent-loglines li:hover,
+.social-activity-list li:hover) {
+	background-color: var(--bg-color--hover);
+}
+.mw-changeslist-line::before,
+body:not(.skin-fandommobile) .mw-contributions-list li::before,
+.mw-logevent-loglines li::before,
+.social-activity-list li::before {
+	content: '';
+	display: block;
+	width: calc(var(--circle-radius) * 2);
+	height: calc(var(--circle-radius) * 2);
+	position: absolute;
+	left: calc(0px - var(--left-width) - var(--circle-radius) + var(--line-width)/2);
+	top: calc(50% - var(--circle-radius));
+	border: var(--circle-border-width) solid var(--circle-border-color);
+	border-radius: 100%;
+	background: var(--circle-bg-color);
+	transition: all .3s;
+}
+.mw-changeslist-line:hover::before,
+body:not(.skin-fandommobile) .mw-contributions-list li:hover::before,
+.mw-logevent-loglines li:hover::before,
+.social-activity-list li:hover::before {
+	--circle-radius: var(--circle-radius--hover);
+	border: var(--circle-border-width--hover) solid var(--circle-border-color--hover);
+	background: var(--circle-bg-color--hover);
+	width: calc(var(--circle-radius--hover) * 2);
+	height: calc(var(--circle-radius--hover) * 2);	
+}
+:is(.mw-changeslist,
+.mw-contributions-list,
+.mw-logevent-loglines) .comment {
+	color: var(--minor-script-text-color);
+	font-size: 0.825em;
+}
+.client-js .mw-changeslist ul, .client-js .mw-changeslist table.mw-enhanced-rc {
+	margin-left: var(--left-width);
+}
+.ns-special .mw-changeslist h4, .ns-special .social-activity-feed h4 {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 46px;
+	white-space: nowrap;
+}
+.ns-special .mw-changeslist h4::before, .ns-special .social-activity-feed h4::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -24px;
+	left: -24px;
+	z-index: -1;
+	height: 100%;
+	background-color: var(--theme-page-background-color);
+	backdrop-filter: saturate(50%) blur(16px);
+}
+.mw-changeslist h4, .social-activity-feed h4 {
+	z-index: 1;
+	padding: 12px 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	letter-spacing: 0.05em;
+}
+.mw-changeslist-legend.mw-changeslist-legend {
+	z-index: 2;
+}
+.mw-rcfilters-ui-overlay.oo-ui-defaultOverlay {
+	z-index: 3;
+}
+td.mw-enhanced-rc + td:not(.mw-changeslist-line-inner) {
+	display: none;
+}
+.mw-changeslist .mw-enhancedchanges-checkbox {
+	display: none;
+}
+.rc-content-multiple td.mw-enhanced-rc + td:not(.mw-changeslist-line-inner) {
+	display: table-cell;
+}
+.mw-changeslist-line.mw-rcfilters-ui-highlights-enhanced-nested::before {
+	visibility: hidden;
+}
+table.mw-enhanced-rc th, table.mw-enhanced-rc td {
+	vertical-align: middle;
+}
+#pagehistory li.selected {
+	--bg-color: var(--theme-page-background-color--secondary);
+}
+.social-activity-list .activity-time, td.mw-enhanced-rc, .mw-enhanced-rc-time {
+	font-family: var(--mono-font);
+}
+.skin-fandommobile :is(.mw-changeslist, .mw-contributions-list, .mw-logevent-loglines) {
+	--li-padding: 0;
+	--left-width: 1px;
+}
+.skin-fandommobile tr td.mw-enhanced-rc {
+	word-spacing: -0.5em;
+	min-width: 5rem;
+	padding-right: 2px;
+}
+.mw-changeslist-line tr > td:nth-child(2) {
+	min-width: 15px;
+}
+td.mw-enhanced-rc {
+	text-align: end;
+	min-width: 7rem;
+}
+.social-activity-list li {
+	align-items: center;
+}
+.social-activity-filters .wds-dropdown__content {
+	z-index: 4;
+}
+.mw-changeslist {
+	position: relative;
+}
+@media only screen and (max-width: 767px) {
+#pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) {
+	display: flex;
+	flex-wrap: wrap;
+}
+#pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) > span {
+	margin-right: 10px;
+}
+}
+.mw-index-pager-list-header {
+	display: none;
+}
+
+/* 遮挡文字,用于Template:Barrier */
+.barrier {
+	background: var(--theme-page-text-color);
+	transition: all .5s;
+}
+.barrier:hover {
+	color: var(--theme-page-text-color) !important; /* 用于覆盖用户自定义覆盖颜色时给出的内联样式 */
+	background: none !important; /* 用于覆盖用户自定义覆盖颜色时给出的内联样式 */
+}
+.barrier .barrier-intend {
+	opacity: 0;
+	transition: all .2s;
+}
+.barrier.has-custom-bg {
+	background-color: transparent;
+}
+.barrier:hover .barrier-intend {
+	opacity: 1 !important; /* 用于覆盖用户自定义覆盖颜色时给出的内联样式 */
+}
+.barrier-aut:hover .barrier-bg {
+	opacity: 0;
+}
+.barrier-aut {
+	display: inline-block;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+.barrier-bg {
+	position: absolute;
+	user-select: none;
+}
+.barrier-bg > .has-custom-bg {
+	width: max-content;
+}
+.barrier-aut:hover .barrier .barrier-intend {
+	opacity: 1;
+}
+
+/*Tooltip的改动*/
+.tooltipshidden .main-tooltip {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.main-tooltip {
+    border: 1px solid #fc3a3a !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    background-color: #4b453b !important;
+    color: white !important;
+}
+
+#tooltip-wrapper {
+    padding: 3px 7px 2px 3px;
+}
+ 
+.has-redlinks, .tooltip-loading, .advanced-tooltip .tooltip-contents {
+    display: none;
+}
+ 
+.tooltips-init-complete {
+    cursor: help;
+}
+
+
+/* ==== 异想体_style.css ==== */
+.abnormality-table-green {
+    background-color: green;
+    color: white;
+}
+.abnormality-table-red {
+    background-color: red;
+}
+.abnormality-table-yellow {
+    background-color: yellow;
+    color: black;
+}
+.abnormality-table-lightgreen {
+    background-color: lightgreen;
+    color: black;
+}
+.abnormality-table-foot {
+    background-color: var(--theme-page-background-color--secondary);
+    text-align: left;
+}
+.abnormality-table-center {
+    text-align: center;
+}
+.abnormality-table-clear-padding {
+    padding: 0;
+}
+
+
+/* ==== MobileAbnormalityBox.css ==== */
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url("remote/666aea7f277a0827.bin") format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+.Abnormality {
+    display: inline-block
+}
+
+.Abnormality-border {
+    position: relative;
+    display: inline-block;
+    background-image: url("remote/1cb0f0c0516dc429.bin");
+    width: 100px;
+    height: 135px;
+    background-repeat: no-repeat;
+    background-size: 500px
+}
+
+.Abnormality-ZAYIN .Abnormality-border {
+    background-position: -308px -155.5px
+}
+
+.Abnormality:hover .Abnormality-ZAYIN .Abnormality-border {
+    background-position: -308px -1.7px
+}
+
+.Abnormality-TETH .Abnormality-border {
+    background-position: 0px -156px
+}
+
+.Abnormality:hover .Abnormality-TETH .Abnormality-border {
+    background-position: 0px -1px
+}
+
+.Abnormality-HE .Abnormality-border {
+    background-position: -103px -156px
+}
+
+.Abnormality:hover .Abnormality-HE .Abnormality-border {
+    background-position: -103px -1px
+}
+
+.Abnormality-WAW .Abnormality-border {
+    background-position: -413px -156px
+}
+
+.Abnormality:hover .Abnormality-WAW .Abnormality-border {
+    background-position: -413px -1px
+}
+
+.Abnormality-ALEPH .Abnormality-border {
+    background-position: -206px -156px
+}
+
+.Abnormality:hover .Abnormality-ALEPH .Abnormality-border {
+    background-position: -206px -1px
+}
+
+.Abnormality img {
+    margin-left: -11px;
+    width: 62px;
+    margin-top: 42px
+}
+
+.Abnormality:hover {
+	transition: 0.05s linear;
+    transform: scale(1.12);
+}
+
+.Abnormality-id {
+    position: absolute;
+    text-align: center;
+    font-family: BMDOHYEON;
+    color: black;
+    font-size: 13px;
+    margin-left: -20px;
+    margin-top: 20px;
+    width: 130px;
+    height: 20px;
+    transform: rotate(-3deg)
+}
+
+.Abnormality-name {
+    position:absolute;
+    background-color:#424242;
+    color:white;
+    margin-top:-24px;
+    text-align: center;
+    min-width: 90px;
+    font-size:11px;
+}
+.Abnormality-id-cn {
+    position: absolute;
+    text-align: center;
+    font-size: 9px;
+    color: black;
+    margin-top: 22px;
+    margin-left: -20px;
+    width: 130px;
+    height: 20px;
+    transform: rotate(-3deg)
+}
+.Abnormality:hover .Abnormality-ZAYIN .Abnormality-name {
+    background-color:#1ef802;
+    color:black;
+}
+.Abnormality:hover .Abnormality-TETH .Abnormality-name {
+    background-color:#15a1fc;
+    color:black;
+}
+
+.Abnormality:hover .Abnormality-HE .Abnormality-name {
+    background-color:#fefe2f;
+    color:black;
+}
+
+.Abnormality:hover .Abnormality-WAW .Abnormality-name {
+    background-color:#7e2ef1;
+    color:black;
+}
+
+.Abnormality:hover .Abnormality-ALEPH .Abnormality-name {
+    background-color:#e70a07;
+    color:black;
+}
+.Abnormality:hover .Abnormality-ALEPH .Abnormality-name span {
+    color: black !important;
+}
+/*DLC*/
+.Abnormality-DLC {
+    display: inline-block;
+}
+
+.Abnormality-DLC-border {
+    position: relative;
+    display: inline-block;
+    background-image: url("remote/44578cdc51b51177.bin");
+    width: 100px;
+    height: 135px;
+    background-repeat: no-repeat;
+    background-size: 700px
+}
+
+.Abnormality-DLC-ZAYIN .Abnormality-DLC-border {
+    background-position: -20px -2px
+}
+.Abnormality-DLC:hover .Abnormality-DLC-ZAYIN .Abnormality-DLC-border {
+  background-position: -20px -176px
+}
+.Abnormality-DLC-TETH .Abnormality-DLC-border {
+    background-position: -155px -2px
+}
+.Abnormality-DLC:hover .Abnormality-DLC-TETH .Abnormality-DLC-border {
+    background-position: -155px -176px
+}
+.Abnormality-DLC-HE .Abnormality-DLC-border {
+    background-position: -300px -2px
+}
+.Abnormality-DLC:hover .Abnormality-DLC-HE .Abnormality-DLC-border {
+    background-position: -300px -176px
+}
+.Abnormality-DLC-WAW .Abnormality-DLC-border {
+    background-position: -440px -2px
+}
+.Abnormality-DLC:hover .Abnormality-DLC-WAW .Abnormality-DLC-border {
+    background-position: -440px -176px
+}
+.Abnormality-DLC-ALEPH .Abnormality-DLC-border {
+    background-position: -577px -2px
+}
+.Abnormality-DLC:hover .Abnormality-DLC-ALEPH .Abnormality-DLC-border {
+    background-position: -577px -176px
+}
+.Abnormality-DLC img {
+    margin-left: -11px;
+    width: 62px;
+    margin-top: 42px
+}
+.Abnormality-DLC:hover {
+	transition: 0.05s linear;
+    transform: scale(1.12);
+}
+.Abnormality-DLC-id {
+    position: absolute;
+    text-align: center;
+    font-family: BMDOHYEON;
+    color: black;
+    font-size: 12px;
+    margin-left: -20px;
+    margin-top: 24px;
+    width: 130px;
+    height: 20px;
+    transform: rotate(-3deg)
+}
+.Abnormality-DLC-name {
+    position:absolute;
+    background-color:#424242;
+    color:white;
+    margin-top:-15px;
+    white-space:nowrap;
+    text-align: center;
+    min-width: 90px;
+    font-size:11px;
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-ZAYIN .Abnormality-DLC-name {
+    background-color:#1ef802;
+    color:black;
+}
+.Abnormality-DLC:hover .Abnormality-DLC-TETH .Abnormality-DLC-name {
+    background-color:#15a1fc;
+    color:black;
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-HE .Abnormality-DLC-name {
+    background-color:#fefe2f;
+    color:black;
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-WAW .Abnormality-DLC-name {
+    background-color:#7e2ef1;
+    color:black;
+}
+
+.Abnormality-DLC:hover .Abnormality-DLC-ALEPH .Abnormality-DLC-name {
+    background-color:#e70a07;
+    color:black;
+}
